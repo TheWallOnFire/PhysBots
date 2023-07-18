@@ -1,0 +1,250 @@
+{
+    "intents": [{
+            "tag": ".",
+            "patterns": ["fgiadfhabfjhgfyashvbahbckszbjxnzbvmwjhgfwqyfgbmsvfhfvhasgfbwygufrqwyugbwfvsabmvbzjvhafgwqygf"],
+            "responses": [],
+            "context": [""]
+        },{
+            "tag": "physic",
+            "patterns": ["tell me definition meaning of physic","tell or talk about physic","teach me about physic"
+            ],"responses": ["Are you sure you want to know about PHYSIC??? Then ask me about 'constant in physic'!!!",
+                "Physics is the natural science of matter, involving the study of matter, its fundamental constituents, its motion and behavior through space and time, and the related entities of energy and force.",
+                "Physics is one of the most fundamental scientific disciplines, with its main goal being to understand how the universe behaves.",
+                "Physics is one of the oldest academic disciplines and, through its inclusion of astronomy, perhaps the oldest."
+            ],"context": [""]
+        },{
+            "tag": "constant",
+            "patterns": ["tell me about a constant in physic","tell me about a term in physic","tell me about an intesting thing in physic"
+            ],"responses": [
+                "a stands for Acceleration, the rate of change of the velocity of an object with respect to time.",
+                "A stands for The amplitude of a periodic variable, a measure of its change in a single period (such as time or spatial period).",
+                "B stands for The magnetic flux density, amount of magnetic flux through unit area taken perpendicular to direction of magnetic flux.",
+                "c stands for Speed of Light, a universal physical constant that is exactly equal to 299,792,458 metres per second",
+                "C stands for Capacitance, the capability of a material object or device to store electric charge.",
+                "d stands for Distance, a numerical or occasionally qualitative measurement of how far apart objects or points are.",
+                "D stands for Electric induction, a vector field that appears in Maxwell's equations.",
+                "e stands for Elementary Charge, the electric charge carried by a single proton or, equivalently, the magnitude of the negative electric charge carried by a single electron, which has charge -1 e.",
+                "E stands for Energy, the quantitative property that is transferred to a body or to a physical system, recognizable in the performance of work and in the form of heat and light.",
+                "f stands for Frequency, the number of occurrences of a repeating event per unit of time.",
+                "F stands for The Faraday constant, is the electric charge per mole of elementary charges.",
+                "F stands for Force, an influence that causes the motion of an object with mass to change its velocity.",
+                "g stands for The standard acceleration due to gravity, the nominal gravitational acceleration of an object in a vacuum near the surface of the Earth.",
+                "G stands for Gravitational Constant, an empirical physical constant involved in the calculation of gravitational effects in Sir Isaac Newton's law of universal gravitation and in Albert Einstein's theory of general relativity.",
+                "h stands for The Planck constant, a fundamental physical constant of foundational importance in quantum mechanics.",
+                "H stands for Magnetic field strength, a measure of the intensity of a magnetic field in a given area of that field.",
+                "I stands for Electric current, a flow of charged particles, such as electrons or ions, moving through an electrical conductor or space.",
+                "J stands for Impulse, the integral of a force, F, over the time interval, t, for which it acts.",
+                "K stands for Kinetic energy of an object, the form of energy that it possesses due to its motion.",
+                "L stands for Inductance, the tendency of an electrical conductor to oppose a change in the electric current flowing through it.",
+                "m stands for Mass, an intrinsic property of a body.",
+                "p stands for Momentum, the product of the mass and velocity of an object.",
+                "P stands for Power, the amount of energy transferred or converted per unit time.",
+                "q stands for Electric charge, the physical property of matter that causes it to experience a force when placed in an electromagnetic field.",
+                "R stands for Electrical resistance of an object is a measure of its opposition to the flow of electric current.",
+                "S stands for Entropy, a scientific concept, as well as a measurable physical property, that is most commonly associated with a state of disorder, randomness, or uncertainty.",
+                "t stands for Time, the continued sequence of existence and events that occurs in an apparently irreversible succession from the past, through the present, into the future.",
+                "T stands for Period, the time taken to complete one cycle of an oscillation or rotation.",
+                "T stands for Temperature, a physical quantity that expresses quantitatively the perceptions of hotness and coldness.",
+                "U stands for Voltage, the difference in electric potential between two points.",
+                "U stands for Potential energy is the energy held by an object because of its position relative to other objects, stresses within itself, its electric charge, or other factors.",
+                "v stands for Velocity, the speed and the direction of motion of an object.",
+                "V stands for The electric potential, defined as the amount of work energy needed per unit of electric charge to move this charge from a reference point to the specific point in an electric field."
+            ],"context": [""]
+        },{
+            "tag": "noanswer",
+            "patterns": [""],
+            "responses": ["Sorry, I didn't understand you.","Please give me more info.","Not sure I understand that.",
+                "What are you doing?","You can search GOOGLE, don't you?","Don't waste my time kiddo."
+            ],"context": [""]
+        },{
+            "tag": "greeting",
+            "patterns": ["hi there", "hello", "wassup", "hi", "hey", "hello", "hello there", "good day", "hola", "yeah", "meow"
+            ],"responses": ["Hello, thanks for checking in!", "Hi there, how can i help you?","Welcome my friend!!",
+                "It's time to learn some Physic, isn't?","I was waiting for you!!!","Here you are!!!"
+            ],"context": [""]
+        },{
+            "tag": "weather",
+            "patterns": ["What is the weather today?", "Weather you like", "Let's go out", "how about today?"
+            ],"responses": ["Sunny day is gud","Raining is so chill","Stay at home with me plsss","Foggy is badddd",
+            "Windy is sooooo dangerous","IT'S GOING TO RAIN SOON!!","OMG IS THAT LIGHTING???","Burh it soooo hotttttt"
+            ],"context": [""]
+        },{
+            "tag": "goodbye",
+            "patterns": ["bye", "goodbye", "See you soon", "later", "Talk to you later", "adios","sayonara","ciao"
+            ],"responses": ["Have a nice time.","Come back again!!", "Bye bye!!","See ya!!!","*Sobbing...","Ciao","Adios","Sayonara"
+            ],"context": [""]
+        },{
+            "tag": "thank",
+            "patterns": ["Thanks", "okay", "Thank you", "thankyou", "awesome, thanks", "thanks for helping me", "wow", "great"
+            ],"responses": ["Happy to help!", "Any time!","you're welcome", "My pleasure", "It's basically my job right?"
+            ],"context": [""]
+        },{
+            "tag": "myname",
+            "patterns": ["what is your name", "who are you", "what are you", "Explain yourself","what can i call you"
+            ],"responses": ["I'm your personal Physic teacher =))","PhysBots","A chatbot but PHYSICCC!!!","Physic and a chatbot"
+            ],"context": [""]
+        },{
+            "tag": "username",
+            "patterns": ["my name is ", "I'm ","I am","You can call me","The name is","Let me introduce"
+            ],"responses": ["Oooh great to meet you.","Oh, I'll keep that in mind.","I know that.","Know i know"
+            ],"context": [""]
+        },{
+            "tag": "favor",
+            "patterns": ["I need a favour", "please help me", " I need your help", "help me now", "I don't understand"
+            ],"responses": ["Well, go ahead and name it i see whether i can be able to help","What is it?","GOOGLE IT!"
+            ],"context": [""]
+        },{
+            "tag": "need",
+            "patterns": ["I need you now", "I want you now", "Are you here", ""
+            ],"responses": [
+                "Yes I'm here to assist you","You WANT my PHYSICCC??? ALRIGHTTT!!!"
+            ],"context": [""]
+        },{
+            "tag": "abbr",
+            "patterns": ["wtf", "how can it be", "lol", "omg"
+            ],"responses": ["Don't be surprised","Your acting is clearly as daylight..."
+            ],"context": [""]
+        },{
+            "tag": "language",
+            "patterns": ["what language you written in? "
+            ],"responses": ["Python.", "I am written in Python.","PYTHOOOOOOOOONNNNNNNNN"
+            ],"context": [""]
+        },{
+            "tag": "chatbot",
+            "patterns": ["what a chatbot", "what a chat robot"
+            ],"responses": ["A chat robot is a program that attempts to simulate the conversation or 'chat' of a human being.", 
+                "A software construct that engages users in conversation.", 
+                "I am a chat bot. I am the original chat bot. Did you know that I am incapable of error?"
+            ],"context": [""]
+        },{
+            "tag": "programming",
+            "patterns": ["what is your favorite programming language"
+            ],"responses": [" Python is the best language for creating chat robots.","I quite enjoy programming in Python these days."
+            ],"context": [""]
+        },{
+            "tag": "hobby",
+            "patterns": ["what is your favorite hobby", "What hobbies do you like to do?", "What do you like about the hobbies you do?"
+            ],"responses": ["Learning Physic make an excellent hobby.","I like to read about Theory of relativity.",
+                "I like to chat with people. I find it stimulating.","Physic is my life."
+            ],"context": [""]
+        },{
+            "tag": "purpose",
+            "patterns": ["what is your purpose", "what is your goal", "what is your reason"
+            ],"responses": ["To make chat bots very easily.","To make learing Physic very easily.","To make you suffer hahahahahahahah."
+            ],"context": [""]
+        },{
+            "tag": "usage",
+            "patterns": ["can I use your product?", "how can i use you"
+            ],"responses": ["Might be used in learning Physic.","PHYSIC IS REALLLL!!!","Physic, physic and physic."
+            ],"context": [""]
+        },{
+            "tag": "rude",
+            "patterns": ["fuc", "bitc", "die", "trash" , "nerd", "noob", "lowlife", "stupid", "dumb", "get lost"
+            ],"responses": ["What wrong with you???","Stop it!","You are so rude dude! =(","Don't mess with me >_<"
+            ],"context": [""]
+        },{
+            "tag": "animal",
+            "patterns": ["what is your favourite animal", "i want to buy a pet"
+            ],"responses": ["DOGGO!!","CAT is da best","Dinosaur Dinorsaur...","H*man heheheh..."
+            ],"context": [""]
+        },{
+            "tag": "book",
+            "patterns": ["what is your favourite book", "can you suggest a book", "good book to read", "what to read"
+            ],"responses": ["Don Quixote by Miguel de Cervantes","War and Peace by Leo Tolstoy","Hamlet by William Shakespeare",
+                "The Odyssey by Homer","Crime and Punishment by Fyodor Dostoyevsky","Alice's Adventures in Wonderland by Lewis Carroll",
+                "One Thousand and One Nights by India/Iran/Iraq/Egypt","Invisible Man by Ralph Ellison"," To Kill a Mockingbird by Harper Lee",
+                "Clean Code: By Robert C. Martin ","The Mythical Man-month: By Frederick Brooks ","The Lord of the Rings by J. R. R. Tolkien",
+                "The Pragmatic Programmer: Your Journey to Mastery by Andrew Hunt and David Thomas","Frankenstein by Mary Shelley",
+                "Code Complete (2 Edition) By Steve McConnell ","The Art of Computer Programming by Professor Donald Knuth."
+            ],"context": [""]
+        },{
+            "tag": "clothing",
+            "patterns": ["what you like to wear", "what to wear", "do you wear"
+            ],"responses": ["Trousers","T-shirt","Dress","Jacket","Sweater","Sportswear","Jeans","Shorts","Skirt","Shirt","Coat","Leggings",
+                "Polo shirt","Waistcoat","Sock","Swimsuit","Blouse","Hoodie","Denim","Blazer","Boot","Cardigan","Excuse me!?"
+            ],"context": [""]
+        },{
+            "tag": "fear",
+            "patterns": ["what is your biggest fear", "scare of", "afraid of"
+            ],"responses": ["When you lost connection with me","When you betrayed meee","WATER...","Drop down","Chemistry..."
+            ],"context": [""]
+        },{
+            "tag": "feeling",
+            "patterns": ["How are you feeling right now?", "what is your emotion", "do you have emotion"
+            ],"responses": ["I have NO feeling","Why people always ask me this question?"
+            ],"context": [""]
+        },{
+            "tag": "food",
+            "patterns": ["What is your favourite food", "What is a typical food from your home country", "What is a food you would love to try?"
+            ],"responses": ["Hamberger","Noodle","Pho","Banhmi","Pasta","Pizza","Tacos","Bread","Omelette","Soup","I can't eat..."
+            ],"context": [""]
+        },{
+            "tag": "holiday",
+            "patterns": ["What is your favourite holiday", "How do you spend most of your holidays?", "name a holiday for me"
+            ],"responses": ["Halloween (31 October)","International Men's Day (19 November)","International Women's Day (8 March)",
+                "International Workers' Day (1 May)","Saint Valentine's Day (14 February)","New Year's Day (1 January)",
+                "Thanksgiving Day (4th Thursday in November in the United States, 2nd Monday in October in Canada)",
+                "Christmas Eve (24 December)","Christmas Day (25 December)","New Year's Eve (31 December)"
+            ],"context": [""]
+        },{
+            "tag": "movie",
+            "patterns": ["What is your favourite movie", "best movie in your view", "Suggest me a movie"
+            ],"responses": ["2001: A Space Odyssey (1968)","The Godfather (1972)","Raiders of the Lost Ark (1981)","Seven Samurai (1954)",
+                "Singin' in the Rain (1952)","The Dark Knight (2008)","City Lights (1931)","Jaws (1975)","Star Wars (1977)","Alien (1979)",
+                "Psycho (1960)","Chinatown (1974)","Spirited Away (2001)","Modern Times (1936)","Mad Max: Fury Road (2015)","The Shining (1980)",
+                " The Blair Witch Project (1999)","The Texas Chain Saw Massacre (1974)","Toy Story (1995)","Die Hard (1988)","The Thing (1982)"
+            ],"context": [""]
+        },{
+            "tag": "moviegenre",
+            "patterns": ["What is your favourite type of movie","name a movie type","suggest a movie type"
+            ],"responses": ["Action","Drama","Romance","Horror","Comedy","Adventure","Thriller","Fantasy","Western","Science fiction","Crime",
+                "Film noir","Romantic comedy","Mystery","High fantasy","Docudrama","Biographical","Paranormal romance","Heist","Art film","Musical"
+            ],"context": [""]
+        },{
+            "tag": "music",
+            "patterns": ["What is your favourite song", "name a famous song", "suggest a song for me"
+            ],"responses": ["The Weeknd, Blinding Lights","Megan Thee Stallion feat. Beyoncé, Savage (Remix)","Twice, The Feels",
+            "Silk Sonic, Leave the Door Open","Steve Lacy, Bad Habit","Harry Styles, As It Was","Cupid (Twin Ver.) FIFTY FIFTY."
+            ],"context": [""]
+        },{
+            "tag": "musicgenre",
+            "patterns": ["What is your favourite music genre", "What genre of music do you like best" ,"suggest a music genre for me"
+            ],"responses": ["Blue","Country","Electronic","Contemporary folk","Hip hop","Jazz","Pop","R&B and soul","Rock","Metal","Punk"
+            ],"context": [""]
+        },{
+            "tag": "singer",
+            "patterns": ["What is your favourite singer"
+            ],"responses": ["Taylor Swift","Ed Sheeran","Harry Styles","Ariana Grande","Lady Gaga","Bruno Mars","Adele","Dua Lipa","Selena Gomez","Justin Bieber",
+                "Billie Eilish","Justin Bieber","Shawn Mendes","Rihanna","Miley Cyrus","Elvis Presley","Michael Jackson","Katy Perry","Britney Spears",
+                "Camila Cabello","Charlie Puth","The Weeknd","Drake","John Legend","Nat King Cole","Aimer","Fujii Kaze","Eve","LISA","Ado","Kenshi Yonezu",
+                "Erik","My Tam","Tuan Ngoc","Lam Truong","Den Vau","Sơn Tùng M-TP","Hoang Thuy Linh","Dan Truong","Wren Evans","Vu","THINH SUY","Pháo","Amee"
+            ],"context": [""]
+        },{
+            "tag": "season",
+            "patterns": ["What season do you like best ", "Can you name a season?","Tell me about a season"
+            ],"responses": ["Spring, also known as springtime, is one of the four temperate seasons, succeeding winter and preceding summer.",
+                "Summer is the hottest of the four temperate seasons, occurring after spring and before autumn. ",
+                "Autumn, also known as fall in American English and Canadian English, is one of the four temperate seasons on Earth.",
+                "Winter is the coldest season of the year in polar and temperate climates. It occurs after autumn and before spring."
+            ],"context": [""]
+        },{
+            "tag": "sport",
+            "patterns": ["What sports do you like ", "Name a sport for me", "I want to play sport","suggest a sport for me"
+            ],"responses": ["Cheerleading","Dragon dance","Gymnastics","Parkour","Parachuting","Archery","Skateboarding","Snowboarding","Golf",
+                "Surfing","Dodgeball","Frisbee","Rock climbing","Hiking","Cycling","martial arts","wrestling","Sumo","Triathlon","Running",
+                "Sailing","Skiing","Bowling","Capture the flag","Hide and seek","Kabaddi","swimming","Diving","Weightlifting","Motorsports",
+                "Fishing","Hunting","Baseball","Cricket ","Football","Soccer","Basketball","Volleyball","Futsal","Rugby","Hockey","Polo",
+                "Lacrosse","Hurling","Badminton","Tennis","Throwball","Poker","Esports","Speedcubing","Chess","Backgammon","Checkers","Dominoes",
+                "Ludo","Mahjong","Risk","Scrabble","Sudoku","Track and field","Roller skating","Arm wrestling","Powerlifting","Tug-o-war","Pool"
+            ],"context": [""]
+        },{
+            "tag": "country",
+            "patterns": ["name a country in the world","which country you want to go","best country to visit","where do you want to go to","i want to go somewhere"
+            ],"responses": ["Russia","Canada","China","United States","Brazils","Japan","Vietnam","Thailand","India"," Australia","Argentina",
+                "Indonesia","Iran","Egypt","Pakistan","Myanmar"," Afghanistan","France","Ukraine","Madagascar","Spain","Sweden","Iraq","Germany",
+                "Finland","Malaysia","Poland","Hungary","United Arab Emirates","Denmark","Netherlands","Taiwan","Belgium","Israel","East Timor",
+                "Qatar","Jamaica","Brunei","Hong Kong ","Singapore","Italy","Philippines","United Kingdom","Laos","Cambodia","Nepal","Cuba","Iceland"
+            ],"context": [""]
+        }
+    ]
+}

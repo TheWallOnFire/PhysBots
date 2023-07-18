@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- Title, favicon and style -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>DASHBOARD</title>
+        <link rel="icon" href="/static/images/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <style>
+            /* Font */
+            body {
+                font-family:'Courier New', Courier, monospace;
+                background-color: rgb(160, 255, 247);
+            }
+            /* Main content */
+            .main {
+                margin-left: 200px; /* Same as the width of the sidenav */
+                font-size: 20px; /* Increased text to enable scrolling */
+                padding: 0px 10px;
+            }
+            /* Fixed sidenav, full height */
+            .sidenav {
+                height: 100%;
+                width: 200px;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #111;
+                overflow-x: hidden;
+                padding-top: 20px;
+            }
+            .sidenav a, .dropdown-btn {
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 20px;
+                color: #818181;
+                display: block;
+                border: none;
+                background: none;
+                width: 100%;
+                text-align: left;
+                cursor: pointer;
+                outline: none;
+            }
+            /* On mouse-over */
+                .sidenav a:hover, .dropdown-btn:hover {
+                color: #f1f1f1;
+            }
+            /* Add an active class to the active dropdown button */
+            .active {
+                background-color: green;
+                color: white;
+            }
+            /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+            .dropdown-container {
+                display: none;
+                background-color: #262626;
+                padding-left: 8px;
+            }
+            /* Optional: Style the caret down icon */
+                .fa-caret-down {
+                float: right;
+                padding-right: 8px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <div class="sidenav"><br>
+            <a href="https://www.facebook.com/profile.php?id=100028820640169" target="_blank">Contact me!</a><br>
+            <a href="{{ url_for('home') }}">HOME</a><br>
+            <button class="dropdown-btn">Table of content<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-container">
+                <a href="#C1">1.Introduction</a>
+                <a href="#C2">2.Description</a>
+                <a href="#C3">3.Functions</a>
+                <a href="#C4">4.Usage</a>
+                <a href="#C5">5.Technologies</a>
+                <a href="#C6">6.Đánh giá</a>
+                <a href="#C7">7.Roadmap</a>
+                <a href="#C8">8.Screenshots</a>
+                <a href="#C9">9.Sources</a>
+            </div><br>
+        </div>
+
+        <!-- title -->
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1 id="C0" style="text-align: center;"><strong>ABOUT PHYSBOTS</strong></h1>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <!-- Main -->
+        <div class="main">
+            <ol>
+                <li id="C1"><strong>Introduction</strong></li>
+                <ul>
+                    <li><strong>Purpose</strong></li>
+                    <p>Physbots được thiết kế ra với mục tiêu trở thành một công cụ
+                        cho phép người dung có thể tiếp cận đến các khái niệm một cách đơn giản
+                        và tiện lợi nhất đồng thời hạn chế các thao tác rườm rà và rắc rối.
+                        PhysBots hiện tại chỉ hỗ trợ tiếng Anh và chưa thể trả lời các câu hỏi tiếng Việt. 
+                    </p>
+                    <li><strong>Creator:</strong> Huỳnh Mạnh Tường</li>
+                </ul>
+                <li id="C2"><strong>Description</strong></li>
+                <p>Đây là 1 chatbot được thiết kế để mô phỏng lại những cuộc trò chuyện giữa người với người,
+                    giúp người dùng tương tác được với chatbot qua những câu hỏi và câu trả lời đến từ chatbot.
+                    Physbots có thể trả lời các câu hỏi đơn giản, đồng thời có thể cung cấp các thông tin thú vị,
+                    như các kiến thức trong vật lý hoặc là đơn giản hơn, các topic thú vị về âm nhạc, điện ảnh hay
+                    thể thao,...Physbots có vai trò như là một công cụ để người dùng có thể học hỏi những điều mới,
+                    thử những thứ mà mình chưa bao giờ làm, hay ít nhất là cần một người để trò chuyện.
+                    <br>Tình trạng: Đang hoạt động trên http://127.0.0.1:5000
+                </p>
+                <li id="C3"><strong>Functions</strong></li>
+                <ol type="a">
+                    <li><strong>Main features</strong></li>
+                    <p>+Trả lời các câu hỏi cơ bản đến từ người dùng, giao tiếp cơ bản.
+                        <br>+Cung cấp các kiến thức về Vật lý một cách đơn giản, dễ tiếp cận.
+                        <br>+Giúp người dùng phát triển vốn tiếng Anh qua các câu trả lời.
+                    </p>
+                    <li><strong>Other features</strong></li>
+                    <p>+Có thể đưa ra các gợi ý trong lĩnh vực Entertainment như music, movie, sport,...
+                        <br>+Cung cấp chức năng tìm kiếm câu trả lời trên Google nếu như không trả lời được câu hỏi.
+                        (Người dùng có thể tra câu trả lời cho câu hỏi của mình trên Google một cách nhanh chóng mà
+                        không cần phải nhập lại chính câu hỏi đó)
+                    </p>
+                    <li><strong>Upcoming features</strong></li>
+                    <p>+Sử dụng tiếng Việt để giao tiếp cũng như trả lời câu hỏi.
+                        <br>+Mở rộng tới lĩnh vực khác như financial, study, military,...
+                        <br>+Cung cấp các đường dẫn tới các trang web khác mà PhysBots thấy thú vị.
+                        <br>+Sử dụng Voice Recognition để nhận diện lời nói.
+                    </p>
+                </ol>
+                <li id="C4"><strong>Usage</strong></li>
+                <p>+Trong giao diện của PhysBots, nhập câu hỏi vào chỗ trống ở phía dưới.
+                    <br>+Câu hỏi phải được nhập bằng tiếng Anh, có các tiêu chí như rõ ràng, ngắn gọn và phải có nghĩa.
+                    <br>+Button "Send" giúp người dùng gửi câu hỏi cho Physbots, hoặc dùng phím ENTER trên bàn phím.
+                    <br>+Button "Google it!!" cho phép người dùng tra câu hỏi của mình trên Google.com, nếu chatbot không trả lời được câu hỏi đó.
+                </p>
+                <li id="C5"><strong>Technologies</strong></li>
+                <p>PhysBots sử dụng các libraries như nltk (Natural language Toolkit) để xử lí thông tin, Keras để 'train model',...</p>
+                <p>PhysBots sử dụng cơ chế Natural language processing (Xử lý ngôn ngữ tự nhiên) để hiểu được câu hỏi từ người dùng:
+                    <br>+Tokenize: Từ câu hỏi của người dùng, PhysBots sẽ tách nó thành những từ đơn vào array.
+                    <br>+Lemmatizing: Từ các từ đã tách, PhysBots sẽ xử lí chúng: chuyển các từ thành dạng đơn giản hơn,
+                    chuyển các kí tự viết hoa thành viết thường,...
+                    <br>+Làm gọn array bằng cách loại đi các từ lặp lại, loại các kí tự đặc biệt như '?', '!'.
+                </p>
+                <p>PhysBots được cung cấp dữ liệu về giao tiếp cơ bản và kiến thức về một số lĩnh vực, và các câu trả lời cho các câu hỏi có sẵn. 
+                    Sau đó PhysBots sẽ xử lý thông tin và 'train', tạo ra Deep neural networks (DNN) bằng phương pháp
+                    'Keras sequential API', sau đó dữ liệu được lưu trong file 'model.h5'.
+                <p>PhysBots sử dụng flask - một micro web framework viết bằng Python - để tạo ra một trang web nhỏ cho phép PhysBots
+                    hoạt động trên đó: nhận input từ người dùng rồi chuyển dữ liệu về database, sau đó PhysBots sẽ predict câu trả lời
+                    rồi đưa ra câu trả lời đó lên trang web.
+
+                </p>
+
+                </p>
+                <li id="C6"><strong>Đánh giá</strong></li>
+                <ol type="a">
+                    <li><strong>Ưu điểm</strong></li>
+                    <p>+Nhanh và dễ sử dụng.<br>
+                        +Trả lời các câu hỏi cơ bản.<br>
+                        +Dễ cập nhật dữ liệu.<br>
+                    </p>
+                    <li><strong>Nhược điểm</strong></li>
+                    <p>+Các câu trả lời còn hạn chế.<br>
+                        +Hệ thống dữ liệu còn nhỏ.<br>
+                    </p>
+                </ol>
+                <li id="C7"><strong>Roadmap</strong></li>
+                <ul>
+                    <li>Đưa PhysBots lên www</li>
+                    <li>Hoàn thiện các câu trả lời cho các câu hỏi cơ bản từ người dùng.</li>
+                    <li>Kết nối chatbot với hệ thống database open-source.</li>
+                    <li>Phát triển database để trả lời các câu hỏi phức tạp hơn.</li>
+                    <li>Cải thiện UI/UX, cải thiện trải nghiệm của người dùng.</li>
+                    <li>Liên kết với các API khác.</li>
+                </ul>
+                <li id="C8"><strong>Screenshots</strong></li>
+                <img src="{{url_for('static', filename='images/Screeshot1.PNG')}}">
+                <img src="{{url_for('static', filename='images/Screeshot2.PNG')}}">
+                <img src="{{url_for('static', filename='images/Screeshot3.PNG')}}">
+                <img src="{{url_for('static', filename='images/Screeshot4.PNG')}}">
+                <img src="{{url_for('static', filename='images/Screeshot5.PNG')}}">
+                <li id="C9"><strong>Sources</strong></li>
+                <p>Đây là những nguồn mà mình tham khảo trong quá trình làm PhysBots:</p>
+                <br><a href="https://en.wikipedia.org/wiki/Main_Page" target="_blank">https://en.wikipedia.org/wiki/Main_Page</a>
+                <br><a href="https://www.w3schools.com/" target="_blank">https://www.w3schools.com/</a>
+                <br><a href="https://getbootstrap.com/" target="_blank">https://getbootstrap.com/</a>
+                <br><a href="https://buffml.com/web-based-chatbot-using-flask-api/" target="_blank">https://buffml.com/web-based-chatbot-using-flask-api/</a>
+                <br><a href="https://stackoverflow.com/" target="_blank">https://stackoverflow.com/</a>
+                <br><a href="https://github.com/" target="_blank">https://github.com/</a>
+                <br><a href="https://steamforvietnam.org/en" target="_blank">https://steamforvietnam.org/en</a>
+            </ol>
+        </div>
+        <script>
+            /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content.
+            This allows the user to have multiple dropdowns without any conflict */
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+            
+            for (i = 0; i < dropdown.length; i++) {
+              dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                  dropdownContent.style.display = "none";
+                } else {
+                  dropdownContent.style.display = "block";
+                }
+              });
+            }
+        </script>
+    </body>
+</html>
